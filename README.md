@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ QuizBlitz AI
 
-## Getting Started
+> Think Fast. Rank Faster.
 
-First, run the development server:
+QuizBlitz AI is a production-quality, realtime multiplayer quiz platform powered by Google Gemini 2.0 Flash. Create AI-generated quizzes in seconds on any topic, invite friends via a room code, and compete in real-time with live leaderboards, streaks, and anti-cheat mechanisms.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![QuizBlitz AI Preview](https://via.placeholder.com/1200x600/0a0a0f/3b82f6?text=QuizBlitz+AI+-+Multiplayer+Quiz+Platform)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🧠 **AI-Powered Generation**: Instantly generate high-quality quizzes on ANY topic using Gemini 2.0.
+- 👥 **Real-Time Multiplayer**: Instant sync using Firebase Realtime Database.
+- 🏆 **Live Animated Leaderboard**: Watch ranks shuffle dynamically with Framer Motion.
+- 🛡️ **Anti-Cheat System**: Detects tab switching and inactivity.
+- 🥇 **Achievement System**: Unlock cool badges for streaks, speed, and accuracy.
+- ⚡ **Smart Time-Based Scoring**: The faster you answer correctly, the more points you get.
+- 👑 **Host Control Panel**: Full control over the game flow, kicking players, and skipping questions.
+- 📱 **Mobile Responsive**: Looks premium and plays perfectly on any device.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Tech Stack
 
-## Learn More
+| Layer | Technology |
+|-------|------------|
+| Frontend | Next.js 16 (App Router), TypeScript, Tailwind CSS v4 |
+| UI & Animations | Framer Motion, Lucide Icons, Radix UI, Canvas |
+| Backend | Next.js API Routes |
+| Real-Time Sync | Firebase Realtime Database |
+| Data Storage | Cloud Firestore |
+| Auth | Firebase Authentication (Google & Anonymous) |
+| AI Integration | Google Gemini 2.0 Flash |
+| State Management | Zustand |
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Quick Start
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/quizblitz-ai.git
+   cd quizblitz-ai
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. **Set up Environment Variables**
+   Copy `.env.example` to `.env.local` and fill in your keys:
+   ```bash
+   cp .env.example .env.local
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Run the development server**
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔥 Firebase Setup
+
+1. Create a project in [Firebase Console](https://console.firebase.google.com/).
+2. Enable **Authentication** (Google provider and Anonymous).
+3. Enable **Realtime Database** and deploy the `firebase.rules.json` included in the root.
+4. Enable **Firestore Database** for user stats and history.
+5. Get your Web App config and paste it into `.env.local`.
+
+## 🌐 Deployment
+
+Deploying to Vercel is highly recommended:
+1. Push your code to GitHub.
+2. Import project in Vercel.
+3. Add all environment variables from `.env.local`.
+4. Deploy!
+
+## 🔮 Future Improvements
+
+- Add customizable player avatars
+- Implement WebRTC voice chat for lobbies
+- Add global leaderboards
+- Export quiz results to PDF
+
+## 📄 License
+
+MIT License - feel free to use this for your own hackathons and projects!
