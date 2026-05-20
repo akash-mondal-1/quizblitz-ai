@@ -4,7 +4,7 @@
 
 QuizBlitz AI is a production-quality, realtime multiplayer quiz platform powered by Google Gemini 2.0 Flash. Create AI-generated quizzes in seconds on any topic, invite friends via a room code, and compete in real-time with live leaderboards, streaks, and anti-cheat mechanisms.
 
-![QuizBlitz AI Preview](https://via.placeholder.com/1200x600/0a0a0f/3b82f6?text=QuizBlitz+AI+-+Multiplayer+Quiz+Platform)
+
 
 ## ✨ Features
 
